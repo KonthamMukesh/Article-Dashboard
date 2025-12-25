@@ -7,4 +7,5 @@ node_modules/
 
 # React
 /build/
-.env*
+.env.*
+.env
