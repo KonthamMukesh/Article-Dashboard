@@ -1,0 +1,10 @@
+# Node
+node_modules/
+
+# Laravel
+/vendor/
+/.env
+
+# React
+/build/
+.env*
