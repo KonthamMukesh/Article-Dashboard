@@ -1,0 +1,101 @@
+/* ================= CARD ================= */
+.card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= HEADER (TITLE + BADGE) ================= */
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* ---------- TITLE ---------- */
+.title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* ---------- BADGE ---------- */
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.badge.ai {
+  background: #6366f1;
+  color: #ffffff;
+}
+
+.badge.original {
+  background: #10b981;
+  color: #ffffff;
+}
+
+/* ================= DATE ================= */
+.date {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 6px 0 10px;
+}
+
+/* ================= PREVIEW ================= */
+.preview {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ================= REFERENCES ================= */
+.refs {
+  margin-top: 10px;
+}
+
+.refs ul {
+  padding-left: 18px;
+}
+
+/* ================= READ MORE BUTTON ================= */
+.read-more {
+  margin-top: auto;
+  padding: 8px 12px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.read-more:hover {
+  background: #0056d2;
+}
+
+/* ================= 📱 MOBILE ================= */
+@media (max-width: 480px) {
+  .card {
+    padding: 14px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+}

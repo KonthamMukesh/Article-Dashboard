@@ -1,0 +1,130 @@
+/* ================= BASE ================= */
+.detail-container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ================= BACK BUTTON ================= */
+.back-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* ================= TITLE ================= */
+.detail-container h1 {
+  font-size: 26px;
+  line-height: 1.4;
+  margin: 10px 0 8px;
+  color: #111827;
+}
+
+/* ================= DATE ================= */
+.detail-container .date {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ================= CONTENT ================= */
+.content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+/* Headings inside article */
+.content h2,
+.content h3 {
+  margin-top: 26px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Paragraphs */
+.content p {
+  margin-bottom: 14px;
+}
+
+/* Lists */
+.content ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.content li {
+  margin-bottom: 6px;
+}
+
+/* Links */
+.content a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* ================= REFERENCES ================= */
+.refs {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.refs h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.refs ul {
+  padding-left: 18px;
+}
+
+.refs li {
+  margin-bottom: 6px;
+}
+
+.refs a {
+  color: #2563eb;
+  word-break: break-all;
+}
+
+/* ================= 📱 MOBILE ================= */
+@media (max-width: 768px) {
+  .detail-container {
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .detail-container h1 {
+    font-size: 22px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-container h1 {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
