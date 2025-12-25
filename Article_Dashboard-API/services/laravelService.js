@@ -19,3 +19,9 @@ exports.getArticleById = async (id) => {
   const res = await axios.get(`${BASE_URL}/articles/${id}`);
   return res.data;
 };
+exports.findAIByParent = async (parentId) => {
+  const res = await axios.get(
+    `${BASE_URL}/articles?parent_article_id=${parentId}&type=ai`
+  );
+  return res.data.data?.length > 0 ? res.data.data[0] : null;
+};

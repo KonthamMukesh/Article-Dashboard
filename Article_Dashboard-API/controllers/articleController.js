@@ -5,10 +5,6 @@ const scrape = require('../services/scrapeService');
 const ollama = require('../services/ollamaService');
 const format = require('../utils/referenceFormatter');
 
-const existingAI = await laravel.findAIByParent(article.id);
-if (existingAI) {
-  return { message: "AI article already exists" };
-}
 
 exports.processArticle = async (articleId = null) => {
   let article; // ✅ declare outside
@@ -21,6 +17,10 @@ exports.processArticle = async (articleId = null) => {
       console.log('➡ Fetching latest article');
       article = await laravel.getLatestArticle();
     }
+    const existingAI = await laravel.findAIByParent(article.id);
+if (existingAI) {
+  return { message: "AI article already exists for this article" };
+}
 
     // ❌ Prevent AI-on-AI (optional safety)
     if (article.is_ai_generated) {
