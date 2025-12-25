@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_URL = "laravel_api.railway.internal";
-const NODE_URL = "lively-inspiration.railway.internal";
+const API_URL = "laravelapi-production-2fe5.up.railway.app/api/articles";
+const NODE_URL = "node-api-production-eb02.up.railway.app";
 
 export const fetchArticles = async (page = 1) => {
   const res = await axios.get(`${API_URL}?page=${page}`);
